@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.base.baseproject.MainActivity">
+
+    <data>
+
+        <variable
+            name="mMainViewModel"
+            type="com.example.base.baseapp.viewModel.MainViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_main"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+        </FrameLayout>
+
+        <com.example.base.baseapp.bottomMenu.HomeBottomMenuGridView
+            android:navigation_data="@{mMainViewModel.navigationData}"
+            android:id="@+id/gv_main_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="#33333333" />
+
+    </LinearLayout>
+
+</layout>

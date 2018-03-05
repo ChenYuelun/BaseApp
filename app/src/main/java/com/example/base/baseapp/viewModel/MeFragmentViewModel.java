@@ -8,7 +8,7 @@ import com.example.base.baseapp.view.fragment.HomeFragment;
  * Created by chenyuelun on 2018/3/2.
  */
 
-public class FragmentTwoViewModel extends BaseViewModel<HomeFragment,HomeFragmentModel> {
+public class MeFragmentViewModel extends BaseViewModel<HomeFragment,HomeFragmentModel> {
 
 
     @Override

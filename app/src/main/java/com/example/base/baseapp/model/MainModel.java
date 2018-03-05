@@ -40,7 +40,8 @@ public class MainModel extends BaseModel {
 
 
 
-    public  Bitmap idToBitmap(Context context,int id) {
+    //测试造数据代码  正式项目此代码删除或者抽取到工具类
+    public Bitmap idToBitmap(Context context, int id) {
         return BitmapFactory.decodeResource(context.getResources(), id);
     }
 

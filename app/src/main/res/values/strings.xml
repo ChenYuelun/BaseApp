@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">BaseApp</string>
     <string name="todo">TODO</string>
+    <string name="welcome_first_text">当然会实现</string>
+    <string name="splash_time">跳过 %1$ds</string>
 </resources>

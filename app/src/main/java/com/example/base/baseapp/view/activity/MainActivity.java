@@ -1,5 +1,7 @@
 package com.example.base.baseapp.view.activity;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v4.app.FragmentTransaction;
 
 import com.example.base.baseapp.BR;
@@ -24,6 +26,17 @@ public class MainActivity extends BaseActivity<ActivityMainBinding,MainViewModel
     @Override
     public int getLayoutId() {
         return R.layout.activity_main;
+    }
+
+    /**
+     * 启动本Antivity的方法
+     * @param context 上下文
+     * @param positionTag 显示哪个fragment
+     */
+    public static void start(Context context,int positionTag){
+        Intent intent = new Intent(context,MainActivity.class);
+        intent.putExtra("positionTag",positionTag);
+        context.startActivity(intent);
     }
 
     //初始化

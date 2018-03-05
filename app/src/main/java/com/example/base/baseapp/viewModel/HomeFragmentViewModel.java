@@ -16,7 +16,7 @@ import java.util.List;
  * Created by chenyuelun on 2018/3/2.
  */
 
-public class FragmentOneViewModel extends BaseViewModel<HomeFragment,HomeFragmentModel> {
+public class HomeFragmentViewModel extends BaseViewModel<HomeFragment,HomeFragmentModel> {
 
     public ObservableField<List<BannerBean>> bannerData = new ObservableField();
     public ObservableField<List<MarqueeBean>> marqueeData = new ObservableField();

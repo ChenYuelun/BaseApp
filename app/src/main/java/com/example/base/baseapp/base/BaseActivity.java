@@ -53,12 +53,4 @@ public abstract class BaseActivity<VDB extends ViewDataBinding,VM extends BaseVi
         mViewModel.detach();
     }
 
-    /**
-     * 用于View获取上下文
-     * @return
-     */
-    @Override
-    public Context getMyContext() {
-        return this;
-    }
 }

@@ -16,7 +16,4 @@ public interface BaseView {
     //获取 BR 参数
     int getBR();
 
-    //获取Context
-    Context getMyContext();
-
 }

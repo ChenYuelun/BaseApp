@@ -5,7 +5,7 @@
 
         <variable
             name="OneViewModel"
-            type="com.example.base.baseapp.viewModel.FragmentOneViewModel" />
+            type="com.example.base.baseapp.viewModel.HomeFragmentViewModel" />
 
     </data>
 
@@ -15,7 +15,7 @@
         android:orientation="vertical">
 
         <com.example.base.baseapp.customerViews.MyBanner
-            android:id="@+id/banner_main"
+            android:id="@+id/banner_home"
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:banner_datas="@{OneViewModel.bannerData}" />
@@ -28,14 +28,14 @@
             <com.example.base.baseapp.customerViews.MarqueeTextView
                 android:background="#33333333"
                 android:marquee_datas="@{OneViewModel.marqueeData}"
-                android:id="@+id/marquee_f1"
+                android:id="@+id/marquee_home"
                 android:layout_width="match_parent"
                 android:layout_height="30dp" />
         </LinearLayout>
 
 
         <Button
-            android:id="@+id/btnShowDialog"
+            android:id="@+id/btn_show_dialog"
             android:text="弹个窗"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

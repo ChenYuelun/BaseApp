@@ -6,7 +6,7 @@
 
         <variable
             name="TwoViewModel"
-            type="com.example.base.baseapp.viewModel.FragmentTwoViewModel" />
+            type="com.example.base.baseapp.viewModel.MeFragmentViewModel" />
 
     </data>
 

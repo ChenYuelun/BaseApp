@@ -7,7 +7,6 @@ import android.text.TextUtils;
 import android.view.ContextThemeWrapper;
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.example.base.baseapp.R;
 import com.example.base.baseapp.entity.ActivityBean;
@@ -35,8 +34,8 @@ public class ActivityDialog extends AlertDialog {
     public static void create(Activity activity, final ActivityBean activityBean, final OnDialogClickListener listener){
         try {
             View view = View.inflate(activity, R.layout.activity_dialog,null);
-            View close = view.findViewById(R.id.iBtnClose);
-            ImageView choice = (ImageView)view.findViewById(R.id.ivActivity);
+            View close = view.findViewById(R.id.iBtn_close);
+            ImageView choice = (ImageView)view.findViewById(R.id.iv_activity);
             if (activityBean != null){
                 //此处使用图片加载框架加载图片
                 String imageUrl = activityBean.getImageUrl();

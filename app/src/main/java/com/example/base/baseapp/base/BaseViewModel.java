@@ -31,11 +31,4 @@ public abstract class BaseViewModel<V extends BaseView , M extends BaseModel> ex
     //执行逻辑代码
     public abstract void fetch();
 
-    //获取上下文
-    public Context getContext() {
-        if (mView != null && mView.get() != null){
-            return mView.get().getMyContext();
-        }
-       return  null;
-    }
 }

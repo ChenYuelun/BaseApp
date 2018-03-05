@@ -28,7 +28,7 @@ public class MainViewModel extends BaseViewModel<MainActivity, MainModel> {
 
     @Override
     public void fetch() {
-        mModel.loadNavigationData(getContext(), new OnDataLoadListener<List<HomeBottomMenuBean>>() {
+        mModel.loadNavigationData(mView.get(), new OnDataLoadListener<List<HomeBottomMenuBean>>() {
             @Override
             public void loadSuccess(List<HomeBottomMenuBean> data) {
                 if (mView != null){

@@ -28,7 +28,7 @@ public class HomeFragmentModel extends BaseModel {
         List<MarqueeBean> textList = new ArrayList<>();
         textList.add(new MarqueeBean("0000000",""));
         textList.add(new MarqueeBean("1111111",""));
-        textList.add(new MarqueeBean("1111111",""));
+        textList.add(new MarqueeBean("2222222",""));
         listener.loadSuccess(textList);
     }
 

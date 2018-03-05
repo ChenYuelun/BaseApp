@@ -4,7 +4,7 @@ import com.example.base.baseapp.BR;
 import com.example.base.baseapp.R;
 import com.example.base.baseapp.base.BaseFragment;
 import com.example.base.baseapp.base.BaseViewModel;
-import com.example.base.baseapp.viewModel.FragmentTwoViewModel;
+import com.example.base.baseapp.viewModel.MeFragmentViewModel;
 
 /**
  * Created by chenyuelun on 2018/3/2.
@@ -13,7 +13,7 @@ import com.example.base.baseapp.viewModel.FragmentTwoViewModel;
 public class MeFragment extends BaseFragment {
     @Override
     public int getLayoutId() {
-        return R.layout.moudle_fragment_two;
+        return R.layout.moudle_fragment_me;
     }
 
     @Override
@@ -29,6 +29,6 @@ public class MeFragment extends BaseFragment {
 
     @Override
     protected BaseViewModel createViewModel() {
-        return new FragmentTwoViewModel();
+        return new MeFragmentViewModel();
     }
 }
